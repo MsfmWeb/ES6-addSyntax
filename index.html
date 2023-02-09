@@ -3,53 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <title>デジタル時計</title>
-    <style type="text/css">
-      input {
-        width: 90px;
-        font-size: 70px;
-        font-family: monospace;
-      }
-
-      p {
-        font-size: 60px;
-      }
-    </style>
-
-    <script>
-      let hourBox, minBox, secBox;
-      let timer;
-
-      window.onload = init;
-      function init() {
-        hourBox = document.clockForm.hour;
-        minBox = document.clockForm.minute;
-        secBox = document.clockForm.sec;
-        dClock();
-      }
-
-      function dClock() {
-        let now = new Date();
-        let hour = now.getHours();
-        let min = now.getMinutes();
-        let sec = now.getSeconds();
-
-        if (hour < 10) hour = "0" + hour;
-        if (min < 10) min = "0" + min;
-        if (sec < 10) sec = "0" + sec;
-        hourBox.value = hour;
-        minBox.value = min;
-        secBox.value = sec;
-        timer = setTimeout("dClock()", 1000);
-      }
-    </script>
   </head>
 
   <body>
-    <form name="clockForm">
-      <p>
-        <input type="text" name="hour" />時
-        <input type="text" name="minute" />分 <input type="text" name="sec" />秒
-      </p>
-    </form>
+    <!-- <script src="src/variable.js"></script> -->
+    <!-- <script src="src/template.js"></script> -->
+    <!-- <script src="src/arrow.js"></script> -->
+    <!-- <script src="src/bunkatsu.js"></script> -->
+    <!-- <script src="src/default.js"></script> -->
+    <!-- <script src="src/sanko.js"></script> -->
+    <!-- <script src="src/spread.js"></script> -->
+    <script src="src/mapfilter.js"></script>
   </body>
 </html>
