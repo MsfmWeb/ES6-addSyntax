@@ -26,3 +26,21 @@ const newnumArr = numArr.filter((num) => {
   return num % 2 === 1;
 });
 console.log(newnumArr);
+
+// mapを使った練習
+// 1番目、2番目と番号を付ける場合
+const nameArr3 = nameArr.map((name, index) => {
+  return `${index + 1}番目は${name}さんです。`;
+});
+// console.log(nameArr3);
+
+// 佐藤さん以外に「さん」をつけて出力する
+// if文を用いて処理を実行する事が可能
+const newnameArr = nameArr.map((name) => {
+  if (name === "佐藤") {
+    return name;
+  } else {
+    return `${name}さん`;
+  }
+});
+console.log(newnameArr);
